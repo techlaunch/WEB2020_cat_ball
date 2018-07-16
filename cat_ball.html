@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The Cat And The Ball</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .paw {
+      position: absolute;
+      top: 0;
+      left: 50px;
+      animation: move-paw 1s linear infinite;
+    }
+
+    .ball {
+      background: #0097C0;
+      border-radius: 50%;
+      position: absolute;
+      top: 200px;
+      left: 500px;
+      width: 100px;
+      height: 100px;
+      animation: move-ball 1s linear 500ms infinite;
+    }
+
+    body {
+      background: #e3edf2;
+    }
+
+    /* CP_DoFullRefresh */
+
+    @keyframes move-paw {
+      0% {
+        transform: translateX(0px);
+      }
+      50% {
+        transform: translateX(380px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
+
+    @keyframes move-ball {
+      0% {
+        transform: translateX(0px);
+      }
+      50% {
+        transform: translateX(600px);
+        background: #000;
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--HTML: Use these classes for reference!-->
+  <div class="ball"></div>
+  <img class="paw" src="https://s3.amazonaws.com/stash.rachelnabors.com/codepen/css-animation-workshop/paw.png" />
+</body>
+
+</html>
